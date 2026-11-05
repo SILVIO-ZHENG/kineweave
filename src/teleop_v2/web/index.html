@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KineWeave &middot; Multi-robot teleoperation</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="brand"><span class="brand-icon">&#8984;</span> KineWeave <span class="version">TELEOP</span></div><span class="subtitle">MULTI-ROBOT TELEOPERATION &amp; DATA CAPTURE</span><div id="connection" class="pill">Connecting</div></header>
+<main>
+  <aside class="panel controls">
+    <div class="eyebrow">OPERATOR CONSOLE</div><h1>Control</h1>
+    <div class="robot-card"><span id="robotName">&mdash;</span><small id="robotDetail">&mdash;</small></div>
+    <div id="hardwareNote" class="notice">Simulation</div>
+    <label>Input<select id="inputMode"><option value="cartesian">Keyboard / gamepad &middot; Cartesian</option><option value="joint">Named joint target</option><option value="xr">AR / VR &middot; WebXR tracking</option></select></label>
+    <label>End-effector task<select id="task"></select></label>
+    <label>Translation speed <span id="speedValue">0.08 m/s</span><input id="speed" type="range" min="0.01" max="0.2" step="0.01" value="0.08"></label>
+    <label>Grasp <span id="graspValue">0%</span><input id="grasp" type="range" min="0" max="1" step="0.01" value="0"></label>
+    <div class="button-row"><button id="arm" class="primary">Arm</button><button id="pause">Pause</button></div>
+    <button id="deadman" class="deadman">Hold to move</button>
+    <div class="button-row"><button id="calibrate">Re-anchor</button><button id="reset">Reset</button></div>
+    <button id="estop" class="danger">Software stop</button>
+    <p class="help">Hold Space or gamepad LB to move. Arrows control XY; W/S control Z. I/K, U/O and J/L rotate around X, Y and Z. Stale input automatically holds motion.</p>
+    <div class="button-row"><button id="vr">Start VR</button><button id="ar">Start AR</button></div>
+    <small id="deviceInfo">No gamepad detected</small>
+  </aside>
+  <section class="center">
+    <div class="panel view"><div class="view-header"><div><span class="eyebrow">LIVE KINEMATICS</span><h2>Robot view</h2></div><div id="mode" class="pill">DISARMED</div></div><canvas id="robotView"></canvas><div class="view-caption">Drag to orbit &middot; Scroll to zoom <span>Kinematic schematic</span></div></div>
+    <div class="metrics"><div class="panel"><span>Coordinates</span><strong id="dimensions">&mdash;</strong></div><div class="panel"><span>Input age</span><strong id="latency">&mdash;</strong></div><div class="panel"><span>Control cycles</span><strong id="cycles">0</strong></div><div class="panel"><span>Recorder</span><strong id="recordStatus">IDLE</strong></div></div>
+    <section class="panel recorder"><div><span class="eyebrow">EPISODE CAPTURE</span><h2>Record &amp; replay</h2></div><div class="record-controls"><input id="taskText" placeholder="Task description"><button id="record" class="primary">Start recording</button></div><div id="episodePath" class="path">HDF5 &middot; JSONL &middot; JPEG + timestamps</div><div class="playback"><select id="episodes"><option>Select an episode</option></select><button id="refreshEpisodes">Refresh</button><button id="loadEpisode">Load replay</button><button id="live">Live</button></div><input id="timeline" type="range" min="0" max="0" value="0" disabled><div id="playbackInfo" class="help">Playback changes the display only</div></section>
+    <div id="message" role="status">Ready</div>
+    <section id="cameras" class="camera-grid"></section>
+  </section>
+  <aside class="panel inspector"><div class="eyebrow">ROBOT STATE</div><h2>Joint feedback</h2><div id="jointControl" hidden><label>Target joint<select id="jointSelect"></select></label><input id="jointTarget" type="range" step="0.001"><span id="jointTargetValue"></span></div><div id="joints"></div><div class="events-title">Runtime events</div><div id="events"></div></aside>
+</main>
+<div id="xrOverlay"><div>KineWeave &middot; Pinch or squeeze to move</div><button id="exitXR">Exit XR</button></div>
+<script src="/app.js"></script>
+</body></html>

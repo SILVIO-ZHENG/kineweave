@@ -1,0 +1,71 @@
+{
+  "schema_version": "teleop.validation/v1",
+  "date": "2026-11-05",
+  "timezone": "Europe/London",
+  "python": "3.12.10",
+  "platform": "Windows",
+  "versions": {
+    "numpy": "2.5.4",
+    "h5py": "3.16.0",
+    "opencv-python": "4.14.0.94",
+    "pytest": "9.2.0",
+    "ruff": "0.17.3"
+  },
+  "tests": {
+    "result": "passed",
+    "passed": 74,
+    "failed": 0,
+    "elapsed_seconds": 2.09,
+    "command": "python -m pytest tests -q",
+    "scope": [
+      "Named 6/7/24/29/43-coordinate profiles, FK, bounded IK, URDF fixed transforms and rejection of unsupported joints",
+      "Integrated simulation and fake-SDK G2/G1/Dex3 driver behavior, read-only publishers and feedback races",
+      "Arming, held enable, ownership, input ordering, transport TTL, hold/re-anchor and latched software stop",
+      "Hold failure revokes ownership; stale feedback, rejected commands and slow IK cannot continue normal dispatch",
+      "Asynchronous recording, dimensions, queue overflow, incomplete episodes and tamper detection",
+      "Real loopback HTTP authentication, origin checks, typed errors, recorded-camera hash checks and display-only replay",
+      "Actual app.js input logic in a Node VM: focus, visibility, zero trigger and frozen XR expiry",
+      "Real synthetic JPEG persistence and MP4 decoding/export without opening a camera"
+    ]
+  },
+  "other_checks": {
+    "ruff": "passed",
+    "python_compileall": "passed",
+    "javascript_syntax": "passed",
+    "pip_check": "passed",
+    "wheel_build": "passed",
+    "documentation_cli_examples": 15,
+    "documentation_python_examples": 6,
+    "english_only_public_sources": "passed",
+    "kineweave_cli_entry_point": "passed"
+  },
+  "demonstration": {
+    "command": "python scripts/acceptance_demo.py",
+    "hardware_connections": 0,
+    "physical_camera_connections": 0,
+    "layout_dimensions": [
+      6,
+      7,
+      24,
+      29,
+      43
+    ],
+    "sealed_episodes": 6,
+    "all_episode_hashes_verified": true,
+    "cartesian_samples": 31,
+    "cartesian_active_samples": 31,
+    "synthetic_camera_frames": 10,
+    "csv_export": "outputs/validation/cartesian_samples.csv",
+    "synthetic_video": "outputs/validation/synthetic_preview.mp4",
+    "summary": "outputs/validation/demo_results.json"
+  },
+  "project": "KineWeave",
+  "limitations": [
+    "G2/G1 drivers were verified against official interfaces and fake SDK contracts, not physical robots or target SDK/firmware environments.",
+    "Bundled geometry and limits are demonstrations; physical execution requires accurate models, site configuration and hardware acceptance.",
+    "No physical gamepad or AR/XR headset was tested. HTTP and isolated JavaScript tests cover UI behavior, but full visual browser acceptance has not been performed.",
+    "The generic guard covers joint limits, rates and freshness. G1 walking, collision planning and whole-body balance are outside this implementation.",
+    "The Python/HTTP runtime is neither hard-real-time nor functionally safety-certified; firmware protection and stop behavior require site verification.",
+    "Hands support grasp synergy and named joint targets, without generic independent-finger IK."
+  ]
+}
