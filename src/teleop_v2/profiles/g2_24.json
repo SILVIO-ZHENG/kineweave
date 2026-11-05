@@ -1,0 +1,603 @@
+{
+  "id": "g2_24",
+  "display_name": "AGIBOT G2A 24-coordinate demo layout",
+  "schema_version": "teleop.robot/v1",
+  "joints": [
+    {
+      "name": "left_arm_joint1",
+      "group": "left_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint2",
+      "group": "left_arm",
+      "lower": -2.059505,
+      "upper": 2.059505,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint3",
+      "group": "left_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint4",
+      "group": "left_arm",
+      "lower": -2.495838,
+      "upper": 1.012308,
+      "initial": -1,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint5",
+      "group": "left_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint6",
+      "group": "left_arm",
+      "lower": -1.012308,
+      "upper": 1.012308,
+      "initial": 0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_arm_joint7",
+      "group": "left_arm",
+      "lower": -1.535907,
+      "upper": 1.535907,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_effector_position",
+      "group": "left_hand",
+      "lower": 0,
+      "upper": 0.025,
+      "initial": 0.025,
+      "unit": "m",
+      "velocity": 0.03,
+      "acceleration": 0.1
+    },
+    {
+      "name": "right_arm_joint1",
+      "group": "right_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint2",
+      "group": "right_arm",
+      "lower": -2.059505,
+      "upper": 2.059505,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint3",
+      "group": "right_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint4",
+      "group": "right_arm",
+      "lower": -2.495838,
+      "upper": 1.012308,
+      "initial": -1,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint5",
+      "group": "right_arm",
+      "lower": -3.071796,
+      "upper": 3.071796,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint6",
+      "group": "right_arm",
+      "lower": -1.012308,
+      "upper": 1.012308,
+      "initial": 0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_arm_joint7",
+      "group": "right_arm",
+      "lower": -1.535907,
+      "upper": 1.535907,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_effector_position",
+      "group": "right_hand",
+      "lower": 0,
+      "upper": 0.025,
+      "initial": 0.025,
+      "unit": "m",
+      "velocity": 0.03,
+      "acceleration": 0.1
+    },
+    {
+      "name": "head_joint1",
+      "group": "head",
+      "lower": -1.57,
+      "upper": 1.57,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "head_joint2",
+      "group": "head",
+      "lower": -0.349,
+      "upper": 0.349,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "head_joint3",
+      "group": "head",
+      "lower": -0.534,
+      "upper": 0.534,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_joint1",
+      "group": "waist",
+      "lower": -1.082,
+      "upper": 0.000174,
+      "initial": -0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_joint2",
+      "group": "waist",
+      "lower": -0.000174,
+      "upper": 2.6529,
+      "initial": 0.7,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_joint3",
+      "group": "waist",
+      "lower": -1.9198,
+      "upper": 1.57,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_joint4",
+      "group": "waist",
+      "lower": -0.4363,
+      "upper": 0.4363,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_joint5",
+      "group": "waist",
+      "lower": -3.0455,
+      "upper": 3.0455,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    }
+  ],
+  "chains": {
+    "left": {
+      "base_xyz": [
+        0,
+        0.23,
+        1.05
+      ],
+      "base_rpy": [
+        0,
+        0,
+        0
+      ],
+      "segments": [
+        {
+          "joint": "left_arm_joint1",
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint2",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint3",
+          "xyz": [
+            0.08,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint4",
+          "xyz": [
+            0.19,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint5",
+          "xyz": [
+            0.15,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint6",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_arm_joint7",
+          "xyz": [
+            0.03,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        }
+      ],
+      "tool_xyz": [
+        0.1,
+        0,
+        0
+      ],
+      "tool_rpy": [
+        0,
+        0,
+        0
+      ]
+    },
+    "right": {
+      "base_xyz": [
+        0,
+        -0.23,
+        1.05
+      ],
+      "base_rpy": [
+        0,
+        0,
+        0
+      ],
+      "segments": [
+        {
+          "joint": "right_arm_joint1",
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint2",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint3",
+          "xyz": [
+            0.08,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint4",
+          "xyz": [
+            0.19,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint5",
+          "xyz": [
+            0.15,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint6",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_arm_joint7",
+          "xyz": [
+            0.03,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        }
+      ],
+      "tool_xyz": [
+        0.1,
+        0,
+        0
+      ],
+      "tool_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "effectors": {
+    "left": {
+      "joints": [
+        "left_effector_position"
+      ],
+      "open": [
+        0.025
+      ],
+      "closed": [
+        0
+      ]
+    },
+    "right": {
+      "joints": [
+        "right_effector_position"
+      ],
+      "open": [
+        0.025
+      ],
+      "closed": [
+        0
+      ]
+    }
+  },
+  "metadata": {
+    "simulation_only": true,
+    "hardware_validated": false,
+    "geometry": "demonstration_not_calibrated",
+    "default_control_groups": [
+      "left_arm",
+      "right_arm",
+      "left_hand",
+      "right_hand"
+    ],
+    "manufacturer": "AGIBOT",
+    "robot_family": "G2A",
+    "effector_semantics": "physical_opening_metres",
+    "source_layout": "Existing Nexus G2A canonical 24D interface; no policy-action inversion is applied.",
+    "notes": "Bundled geometry and limits are for software demonstrations and have not been calibrated on hardware. Replace them with the actual robot model and site-accepted configuration."
+  }
+}
