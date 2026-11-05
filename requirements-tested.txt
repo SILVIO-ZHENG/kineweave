@@ -1,0 +1,7 @@
+# Versions verified on Windows with Python 3.12.
+# Install the project itself with pip install -e .
+numpy==2.5.4
+h5py==3.16.0
+opencv-python==4.14.0.94
+pytest==9.2.0
+ruff==0.17.3

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kineweave"
+version = "0.1.0"
+description = "Modular multi-robot teleoperation and timestamped data capture"
+readme = "README.md"
+authors = [{name = "SILVIO-ZHENG"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "h5py>=3.10,<4"]
+
+[project.optional-dependencies]
+camera = ["opencv-python>=4.8,<5"]
+dev = ["pytest>=8,<10", "ruff>=0.9"]
+
+[project.scripts]
+kineweave = "teleop_v2.cli:main"
+teleop-v2 = "teleop_v2.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/SILVIO-ZHENG/kineweave"
+Repository = "https://github.com/SILVIO-ZHENG/kineweave"
+Issues = "https://github.com/SILVIO-ZHENG/kineweave/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+teleop_v2 = ["profiles/*.json", "web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
