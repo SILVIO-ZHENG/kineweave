@@ -1,0 +1,246 @@
+{
+  "id": "arm7",
+  "display_name": "Generic 7-axis demonstration arm",
+  "schema_version": "teleop.robot/v1",
+  "joints": [
+    {
+      "name": "joint_1",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_2",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_3",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": -0.8,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_4",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0.4,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_5",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_6",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "joint_7",
+      "group": "right_arm",
+      "lower": -2.8,
+      "upper": 2.8,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    }
+  ],
+  "chains": {
+    "right": {
+      "base_xyz": [
+        0,
+        0,
+        0
+      ],
+      "base_rpy": [
+        0,
+        0,
+        0
+      ],
+      "segments": [
+        {
+          "joint": "joint_1",
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_2",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_3",
+          "xyz": [
+            0.08,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_4",
+          "xyz": [
+            0.19,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_5",
+          "xyz": [
+            0.15,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_6",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "joint_7",
+          "xyz": [
+            0.03,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        }
+      ],
+      "tool_xyz": [
+        0.1,
+        0,
+        0
+      ],
+      "tool_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "effectors": {},
+  "metadata": {
+    "simulation_only": true,
+    "hardware_validated": false,
+    "geometry": "demonstration_not_calibrated",
+    "default_control_groups": [
+      "right_arm"
+    ],
+    "notes": "Bundled geometry and limits are for software demonstrations and have not been calibrated on hardware. Replace them with the actual robot model and site-accepted configuration."
+  }
+}

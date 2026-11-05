@@ -1,0 +1,630 @@
+{
+  "id": "g1_29",
+  "display_name": "Unitree G1 29-coordinate demo",
+  "schema_version": "teleop.robot/v1",
+  "joints": [
+    {
+      "name": "left_hip_pitch_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": -0.15,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_hip_roll_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_hip_yaw_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_knee_joint",
+      "group": "legs",
+      "lower": 0,
+      "upper": 2.8,
+      "initial": 0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_ankle_pitch_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": -0.15,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_ankle_roll_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_hip_pitch_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": -0.15,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_hip_roll_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_hip_yaw_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_knee_joint",
+      "group": "legs",
+      "lower": 0,
+      "upper": 2.8,
+      "initial": 0.3,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_ankle_pitch_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": -0.15,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_ankle_roll_joint",
+      "group": "legs",
+      "lower": -2.5,
+      "upper": 2.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_yaw_joint",
+      "group": "waist",
+      "lower": -1.5,
+      "upper": 1.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_roll_joint",
+      "group": "waist",
+      "lower": -1.5,
+      "upper": 1.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "waist_pitch_joint",
+      "group": "waist",
+      "lower": -1.5,
+      "upper": 1.5,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_shoulder_pitch_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_shoulder_roll_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_shoulder_yaw_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_elbow_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": -0.9,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_wrist_roll_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_wrist_pitch_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "left_wrist_yaw_joint",
+      "group": "left_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_shoulder_pitch_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_shoulder_roll_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_shoulder_yaw_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_elbow_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": -0.9,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_wrist_roll_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_wrist_pitch_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0.25,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    },
+    {
+      "name": "right_wrist_yaw_joint",
+      "group": "right_arm",
+      "lower": -2.7,
+      "upper": 2.7,
+      "initial": 0,
+      "unit": "rad",
+      "velocity": 0.6,
+      "acceleration": 1.5
+    }
+  ],
+  "chains": {
+    "left": {
+      "base_xyz": [
+        0,
+        0.23,
+        1.05
+      ],
+      "base_rpy": [
+        0,
+        0,
+        0
+      ],
+      "segments": [
+        {
+          "joint": "left_shoulder_pitch_joint",
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_shoulder_roll_joint",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_shoulder_yaw_joint",
+          "xyz": [
+            0.08,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_elbow_joint",
+          "xyz": [
+            0.19,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_wrist_roll_joint",
+          "xyz": [
+            0.15,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_wrist_pitch_joint",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "left_wrist_yaw_joint",
+          "xyz": [
+            0.03,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        }
+      ],
+      "tool_xyz": [
+        0.1,
+        0,
+        0
+      ],
+      "tool_rpy": [
+        0,
+        0,
+        0
+      ]
+    },
+    "right": {
+      "base_xyz": [
+        0,
+        -0.23,
+        1.05
+      ],
+      "base_rpy": [
+        0,
+        0,
+        0
+      ],
+      "segments": [
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_shoulder_roll_joint",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_shoulder_yaw_joint",
+          "xyz": [
+            0.08,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_elbow_joint",
+          "xyz": [
+            0.19,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_wrist_roll_joint",
+          "xyz": [
+            0.15,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_wrist_pitch_joint",
+          "xyz": [
+            0.04,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "type": "revolute"
+        },
+        {
+          "joint": "right_wrist_yaw_joint",
+          "xyz": [
+            0.03,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "type": "revolute"
+        }
+      ],
+      "tool_xyz": [
+        0.1,
+        0,
+        0
+      ],
+      "tool_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "effectors": {},
+  "metadata": {
+    "simulation_only": true,
+    "hardware_validated": false,
+    "geometry": "demonstration_not_calibrated",
+    "default_control_groups": [
+      "left_arm",
+      "right_arm"
+    ],
+    "manufacturer": "Unitree",
+    "robot_family": "G1",
+    "body_dimension": 29,
+    "hand_dimension": 0,
+    "locomotion": "Use the manufacturer-supported locomotion/balance interface. This model implements fixed-base upper-body kinematics only.",
+    "hand_mapping": "No finger coordinates in this layout.",
+    "notes": "Bundled geometry and limits are for software demonstrations and have not been calibrated on hardware. Replace them with the actual robot model and site-accepted configuration."
+  }
+}
